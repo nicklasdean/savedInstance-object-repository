@@ -23,14 +23,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void confirmUserSubmission(View view){
+        //Todo: Put new user object as serializable object
+        Intent confirmIntent = new Intent(this,ConfirmActivity.class);
+
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         //Todo render all users
-    }
-
-    public void confirmUserSubmission(View view){
-        //Todo: Put new user object as serializable object
-        Intent confirmIntent = new Intent(this,ConfirmActivity.class);
     }
 }
