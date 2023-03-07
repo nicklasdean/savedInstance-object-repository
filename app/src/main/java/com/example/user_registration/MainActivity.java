@@ -26,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
     public void confirmUserSubmission(View view){
         //Todo: Put new user object as serializable object
         Intent confirmIntent = new Intent(this,ConfirmActivity.class);
-
+        User u = new User("Nicklas",false);
+        confirmIntent.putExtra("userRegistered",u);
     }
 
     @Override
